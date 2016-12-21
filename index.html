@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script type="text/javascript">
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+		theme: "theme2",
+		title:{
+			text: "Remuneracao dos Servidores GDF em Outubro de 2016"
+		},
+		data: [
+		{
+			type: "pie",
+			showInLegend: true,
+			toolTipContent: "{y} - #percent %",
+			yValueFormatString: "#0.#,,. Million",
+			legendText: "{indexLabel}",
+			dataPoints: [
+				{  y: 6181563, indexLabel: "8 pessoas recebe acima de: R$9.917.408.400 " },
+				{  y: 2175498, indexLabel: "25 pessoas recebe acima de: R$18.312.597.800" },
+				{  y: 1125844, indexLabel: "858 pessoas recebe acima de: R$219.166.626.200" },
+				{  y: 1727161, indexLabel: "8.633 pessoas recebe acima de: R$1.133.931.561.600" },
+				{  y: 1717786, indexLabel: "34.190 pessoas recebe acima de: R$2.171.813.059.800"}
+			]
+		}
+		]
+	});
+	chart.render();
+}
+	
+  
+	</script>
+	<script src="../supersalarios-gdf/canvasjs.min.js"></script>
+	<title>CanvasJS Example</title>
+</head>
+<body>   
+
+	<div id="chartContainer" style="height: 400px; width: 100%;"></div>
+  <center><h2>43.714 pessoas receberam super salarios acima de 30 mil reais </h2></center>
+</body>
+</html>
